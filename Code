@@ -1,0 +1,23 @@
+//
+//  PP4.c
+//  Adding Tax
+//
+//  Created by Zeb on 8/17/20.
+//
+
+#include <stdio.h>
+
+int main(void)
+{
+    float tax = 0.05f, amount, mult, ans;
+    
+    printf("\nEnter the amount a customer will pay then this program will add tax of %5: ");
+    scanf("%f", &amount);
+    
+    mult = tax * amount;
+    ans = mult + amount;
+    
+    printf("\nWith tax added: $%.2f\n\n", ans);
+    
+    return 0;
+}
